@@ -5,6 +5,7 @@
     - Gerekli modüller yüklenmediği sürece program hata verecektir
     - Program lisanslıdır kodların çalınmasına müsaade edilmez
     - İyi günlerde kullanın (:
+    - Colorama modülünü yükleme unutmayın (pip install colorama)
 
 ![Screenshot_2](https://github.com/user-attachments/assets/6d0befb9-4dbf-442e-be71-e65aa469a54e)
 
