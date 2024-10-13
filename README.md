@@ -10,3 +10,5 @@
 ![Screenshot_2](https://github.com/user-attachments/assets/6d0befb9-4dbf-442e-be71-e65aa469a54e)
 
 Bu kısımda "webhook urlsi" kısmına kendi webhookunuzu yapıştırın
+
+*** LogCord şimdi JavaScript'te!
