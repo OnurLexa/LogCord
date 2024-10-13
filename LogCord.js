@@ -29,4 +29,32 @@ function sendLogMessage(message) {
 	});
 }
 
-sendLogMessage('bu bir test log mesajıdır.');
+
+// 2. KISIM
+
+const https = require('https');
+
+const webhookUrl = 'WEBHOOK_BURAYA';
+const webhookOptions = {
+  method: ' POST',
+  headers: {
+    'Content-Type': 'application/json'
+  }
+};
+
+function sendWebhookMessage(message) {
+  const payload = JSON.stringify({ content: message });
+  const req = https.request(webhookUrl, webhookOptions, (res) => {
+    let data = '';
+    res.on('data', (chunk) => {
+      data += chunk;
+    });
+    res.on('end', () => {
+      console.log(`Sent message to Discord Webhook: ${message}`);
+    });
+  });
+  req.write(payload);
+  req.end();
+}
+
+sendWebhookMessage('ONUR LEXA!');
