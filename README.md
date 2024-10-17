@@ -1,14 +1,12 @@
-    LOGCORD NEDIR
-    - LogCord sizlerin yerleştirdiğiniz site, sistemlerin log kayıtlarını Discord uygulamasında olan sunucunuza aktarır
-    - Bu programın kodlanma amacı tamamıyla eğitim amaçlıdır, olacaklardan yazılımcı sorumlu değildir
-    - Programın yapımcısı: Onur Çelik
-    - Gerekli modüller yüklenmediği sürece program hata verecektir
-    - Program lisanslıdır kodların çalınmasına müsaade edilmez
-    - İyi günlerde kullanın (:
-    - Colorama modülünü yüklemeyi unutmayın (pip install colorama)
+"DiscordWebhookHandler": Discord webhookları icin loggeri temsil eder.
 
-![Screenshot_2](https://github.com/user-attachments/assets/6d0befb9-4dbf-442e-be71-e65aa469a54e)
+"log": log mesajını alır
 
-Bu kısımda "webhook urlsi" kısmına kendi webhookunuzu yapıştırın
+"send": biriken log mesajlarını gönderir.
 
-*** LogCord şimdi JavaScript'te!
+"formatMessage": mesajı biçimlendirir
+
+"main": loggerı kullanarak mesaj gönderir
+
+""" DERLEME AŞAMASI """
+g++ -o LogCord LogCord.cpp -lcurl -pthread
